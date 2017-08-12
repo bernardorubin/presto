@@ -1,10 +1,29 @@
 source 'https://rubygems.org'
 
+# ruby '2.3.3'
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
 
+# My Gems
+
+gem 'simple_form'
+# gem 'carrierwave'
+# gem "mini_magick"
+# gem 'cancancan'
+# gem 'bootstrap-sass', '~> 3.3.6'
+# gem "font-awesome-rails"
+# gem 'devise'
+# gem 'omniauth-facebook'
+# gem 'virtus'
+# gem 'aasm'
+# gem 'pry'
+# gem 'chosen-rails'
+# gem 'nyan-cat-formatter'
+# gem 'rspec-rails'
+# gem 'factory_girl_rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
@@ -37,6 +56,14 @@ group :development, :test do
 end
 
 group :development do
+  gem 'faker'
+  gem 'awesome_print'
+  gem 'interactive_editor'
+  gem 'hirb'
+  gem 'rails-erd'
+  gem 'better_errors'
+  # gem "binding_of_caller"
+
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
