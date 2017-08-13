@@ -10,19 +10,23 @@ end
 # My Gems
 
 gem 'simple_form'
-# gem 'carrierwave'
-# gem "mini_magick"
+gem 'slim'
+gem 'materialize-sass'
+gem 'material_icons'
+gem 'jquery-rails'
 # gem 'cancancan'
-# gem 'bootstrap-sass', '~> 3.3.6'
-# gem "font-awesome-rails"
 # gem 'devise'
 # gem 'omniauth-facebook'
+
+# gem 'nyan-cat-formatter'
+# gem 'carrierwave'
+# gem "mini_magick"
+# gem 'bootstrap-sass', '~> 3.3.6'
+# gem "font-awesome-rails"
 # gem 'virtus'
 # gem 'aasm'
 # gem 'pry'
 # gem 'chosen-rails'
-# gem 'nyan-cat-formatter'
-# gem 'rspec-rails'
 # gem 'factory_girl_rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -56,6 +60,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'rspec-rails'
   gem 'faker'
   gem 'awesome_print'
   gem 'interactive_editor'
