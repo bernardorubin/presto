@@ -14,3 +14,20 @@
 //= require_tree .
 //= require jquery
 //= require materialize
+//= require materialize-form
+//= require cocoon
+
+$(document).ready(function() {
+  $('a').mouseenter(function() {
+    $(".nav-logo").addClass("no-filter");
+    // $(".main_logo").css("color", "#18bc9c");
+    // $(".main_logo").removeClass("leave");
+  });
+
+  $('a').mouseleave(function() {
+    $(".nav-logo").removeClass("no-filter");
+    // $(".main_logo").css("color", "white");
+    // $(".main_logo").addClass("leave");
+  });
+});
+

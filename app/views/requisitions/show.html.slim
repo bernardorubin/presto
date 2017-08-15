@@ -1,0 +1,22 @@
+h1
+  | Solicitud
+= link_to edit_requisition_path(@requisition), class: 'waves-effect waves-light btn-large' do
+  i.material-icons.left
+    | cloud
+  | Editar
+
+table.highlight
+  thead
+    tr
+      th
+        | Name
+      th
+        | Value
+  tbody
+    - @requisition.attributes.each do |attr_name, attr_value|
+     tr
+      td
+        = attr_name
+      td
+        = attr_value
+

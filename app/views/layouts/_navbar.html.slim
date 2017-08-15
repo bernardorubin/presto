@@ -3,12 +3,39 @@ nav
     a.brand-logo.center[href="#!"]
       img[src="http://cdn.yotepresto.com/v2/assets/yotepresto-blanco-15-4a69602dedb325289ae03aa94ef90a81772af9c41050f6403012e5426fcce2d9.svg" alt="logo" class="nav-logo"]
     ul.left.hide-on-med-and-down
-      li
-        a[href="#"]
-          | Mi Cuenta
-      li
-        a[href="#"]
-          | Solicitudes
       li.active
-        a[href="#"]
-          | JavaScript
+        = link_to root_path do
+          i.material-icons
+            | home
+          .nav-name
+            | Home
+      li
+        = link_to requisitions_path do
+          i.material-icons
+            | content_paste
+          .nav-name
+            | Solicitudes
+    ul.right.hide-on-med-and-down
+      - if user_signed_in?
+        li
+          a.facebook-image[href=""]
+            | <img src="
+            = current_user.image
+            | " alt="" style="height:25px">
+        li
+          = link_to profile_path do
+            i.material-icons
+              | fingerprint
+            .nav-name
+              = current_user.display_name
+              |  Ver Mi Cuenta
+        li
+          = link_to "Cerrar Sesión", destroy_user_session_path, method: 'DELETE'
+      - else
+        li
+          = link_to "Ingresar", new_user_session_path
+        li
+          = link_to "Inscribirse", new_user_registration_path
+
+
+

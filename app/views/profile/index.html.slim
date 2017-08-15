@@ -1,0 +1,6 @@
+h1
+  | Editar Mi Usuario
+= simple_form_for @user, url: "/profile" do |f|
+  = f.input :first_name
+  = f.input :first_last_name
+  = f.button :submit, "Guardar Cambios"

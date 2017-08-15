@@ -1,0 +1,35 @@
+h1
+ | Solicitudes
+= link_to new_requisition_path, class: 'waves-effect waves-light btn-large' do
+ i.material-icons.left
+   | cloud
+ | Nueva Solicitud
+table.highlight
+  thead
+    tr
+      th
+        | Monto solicitado
+      th
+        | Fecha
+      th
+        | Ver
+      th
+        | Eliminar
+  tbody
+    - @requisitions.each do |r|
+      tr
+        td
+          | $
+          = r.requested_amount
+        td
+          = r.created_at
+        td
+          =link_to requisition_path(r), class: 'waves-effect waves-light btn' do
+              i.material-icons.left
+                | cloud
+              | Ver Detalles
+        td
+          = link_to requisition_path(r), class: 'waves-effect waves-light btn', method: :delete do
+            i.material-icons.left
+              | cloud
+            | Eliminar

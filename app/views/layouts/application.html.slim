@@ -8,4 +8,17 @@ html
     = javascript_include_tag 'application'
   body
     = render 'layouts/navbar'
-    = yield
+    .container
+      /- if notice
+      /  .card-panel.teal.lighten-2
+      /    = notice
+      /- elsif alert
+      /  .card-panel.amber.darken-1
+      /    = alert
+      = yield
+      - if notice
+        javascript:
+          $(function(){Materialize.toast("#{notice}", 5000);});
+      - elsif alert
+        javascript:
+          $(function(){Materialize.toast("#{alert}", 5000);});

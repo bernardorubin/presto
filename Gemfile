@@ -10,13 +10,16 @@ end
 # My Gems
 
 gem 'simple_form'
+gem 'materialize-form'
 gem 'slim'
 gem 'materialize-sass'
 gem 'material_icons'
 gem 'jquery-rails'
-# gem 'cancancan'
-# gem 'devise'
-# gem 'omniauth-facebook'
+gem 'cocoon'
+gem 'cancancan'
+gem 'devise'
+gem 'devise-i18n'
+gem 'omniauth-facebook'
 
 # gem 'nyan-cat-formatter'
 # gem 'carrierwave'

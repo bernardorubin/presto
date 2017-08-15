@@ -2,18 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6912381b-dd30-416d-884f-d6da0fdbd5e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/index.html.slim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.slim" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20170812233302_create_users.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/requisitions/_form.html.slim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/requisitions/_header.html.slim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/requisitions/edit.html.slim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/requisitions/new.html.slim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/requisitions/show.html.slim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/app_keys.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/locales/es.yml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20170813172922_create_requisitions.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/requisition.rb" afterPath="$PROJECT_DIR$/app/models/requisition.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.slim" afterPath="$PROJECT_DIR$/app/views/home/index.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_navbar.html.slim" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -39,11 +52,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <file leaf-file-name="requisitions_controller.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/requisitions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="350">
+              <caret line="51" column="90" lean-forward="false" selection-start-line="51" selection-start-column="90" selection-end-line="51" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -53,10 +66,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jque</find>
-      <find>rspec</find>
-      <find>chupala</find>
+      <find>devise</find>
+      <find>cocoon</find>
+      <find>last_name</find>
+      <find>config.i18n.default_locale</find>
+      <find>signou</find>
+      <find>latest_first</find>
+      <find>submit</find>
+      <find>telephone</find>
+      <find>bordered</find>
+      <find>soltero</find>
+      <find>cita creada</find>
+      <find>nueva solicitud</find>
+      <find>editar</find>
+      <find>self.find</find>
+      <find>self</find>
+      <find>app_secret</find>
+      <find>if @user</find>
+      <find>new_with</find>
+      <find>validates</find>
+      <find>:es</find>
+      <find>no_mo</find>
+      <find>alidates</find>
+      <find>blanco</find>
+      <find>nueva so</find>
+      <find>tr</find>
+      <find>waves</find>
+      <find>monto sol</find>
+      <find>#{</find>
+      <find>current_user.image</find>
+      <find>no autorizado</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/config/initializers</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,16 +107,40 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
         <option value="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_navbar.html.slim" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.slim" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/profile_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/views/profile/index.html.slim" />
+        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20170814222551_add_is_admin_to_users.rb" />
+        <option value="$PROJECT_DIR$/app/models/ability.rb" />
+        <option value="$PROJECT_DIR$/app/views/requisitions/_header.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/requisitions/edit.html.slim" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/requisitions/new.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/requisitions/_form.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/requisitions/show.html.slim" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/db/migrate/20170815034634_add_image_to_users.rb" />
+        <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/initializers/app_keys.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/requisition.rb" />
+        <option value="$PROJECT_DIR$/config/locales/es.yml" />
+        <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_navbar.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/requisitions/index.html.slim" />
+        <option value="$PROJECT_DIR$/app/controllers/requisitions_controller.rb" />
       </list>
     </option>
   </component>
@@ -95,6 +162,9 @@
     <option name="width" value="1280" />
     <option name="height" value="726" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -103,15 +173,14 @@
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <autoscrollToSource />
+      <autoscrollToSource ProjectPane="true" />
       <autoscrollFromSource ProjectPane="true" />
       <sortByType />
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,6 +203,26 @@
               <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -147,39 +236,29 @@
               <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
+              <item name="requisitions" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v6.9.1/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="gem&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/Gemfile&#10;route&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/routes.rb&#10;gemfile&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/Gemfile" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="SearchEverywhereHistoryKey" value="navbar&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/views/layouts/_navbar.html.slim&#10;routes&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/routes.rb&#10;gitigno&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/.gitignore&#10;user.rb&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/models/user.rb&#10;gem&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/Gemfile&#10;app&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/views/layouts/application.html.slim&#10;application.js&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/assets/javascripts/application.js&#10;applic&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/application.rb&#10;application.rb&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/controllers/application_controller.rb&#10;rou&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/routes.rb&#10;developme&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/environments/development.rb&#10;route&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/routes.rb&#10;gemfile&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/Gemfile" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -309,34 +388,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502575764263</updated>
-      <workItem from="1502575766954" duration="6811000" />
+      <workItem from="1502575766954" duration="10566000" />
+      <workItem from="1502669267197" duration="6845000" />
+      <workItem from="1502748129603" duration="18633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6811000" />
+    <option name="totallyTimeSpent" value="36044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="726" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24555735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -351,14 +431,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170812233302_create_users.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="190">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <folding>
+            <marker date="1502776425000" expanded="true" signature="0:735" ph="/*...*/" />
+            <marker date="1502776425000" expanded="true" signature="1088:1165" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1172:1268" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1281:1316" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1339:1374" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1387:1442" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1464:1533" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1545:1593" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1611:1632" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1668:1707" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170812233302_create_users.rb" />
     <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -369,67 +469,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <marker date="1502643297000" expanded="true" signature="30:183" ph="do ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <marker date="1502643883000" expanded="true" signature="0:714" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.slim">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding>
-            <marker date="1502645167000" expanded="true" signature="67:198" ph="do ... end" />
-            <marker date="1502645167000" expanded="true" signature="303:644" ph="##..." />
-            <marker date="1502645167000" expanded="true" signature="922:1082" ph="##..." />
-            <marker date="1502645167000" expanded="true" signature="1211:1432" ph="##..." />
-            <marker date="1502645167000" expanded="true" signature="1460:1604" ph="do ... end" />
-            <marker date="1502645167000" expanded="true" signature="1625:2146" ph="do ... end" />
-            <marker date="1502645167000" expanded="true" signature="1766:1886" ph="##..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/personal_reference.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1502645389000" expanded="true" signature="23:66" ph=" ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/requisition.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <marker date="1502645362000" expanded="true" signature="17:60" ph=" ... end" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -437,9 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1502496688000" expanded="true" signature="0:369" ph="##..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -447,13 +487,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1502584227000" expanded="true" signature="0:721" ph="##..." />
-            <marker date="1502584227000" expanded="true" signature="776:2438" ph="do ... end" />
-            <marker date="1502584227000" expanded="true" signature="944:1280" ph="do ... end" />
-            <marker date="1502584227000" expanded="true" signature="1329:1950" ph="do ... end" />
-            <marker date="1502584227000" expanded="true" signature="1992:2342" ph="do ... end" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -461,11 +495,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1502645341000" expanded="true" signature="17:396" ph=" ... end" />
-            <marker date="1502645341000" expanded="true" signature="61:392" ph=" ... end" />
-            <marker date="1502645341000" expanded="true" signature="86:386" ph="do ... end" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -473,11 +503,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1502645362000" expanded="true" signature="24:645" ph=" ... end" />
-            <marker date="1502645362000" expanded="true" signature="68:641" ph=" ... end" />
-            <marker date="1502645362000" expanded="true" signature="100:635" ph="do ... end" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -497,85 +523,444 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requisition/index.html.erb" />
+    <entry file="file://$PROJECT_DIR$/app/controllers/requisition_controller.rb" />
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/requisitions.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="49" column="78" lean-forward="false" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
           <folding>
-            <marker date="1502646666000" expanded="true" signature="21:227" ph="..." />
-            <marker date="1502646666000" expanded="true" signature="30:182" ph="..." />
-            <marker date="1502646666000" expanded="true" signature="116:172" ph="..." />
-            <marker date="1502646666000" expanded="true" signature="192:219" ph="..." />
+            <marker date="1502725903000" expanded="true" signature="28:1975" ph="do ... end" />
+            <marker date="1502725903000" expanded="true" signature="33:350" ph="##..." />
+            <marker date="1502725903000" expanded="true" signature="584:942" ph="if ... end" />
+            <marker date="1502725903000" expanded="true" signature="1302:1472" ph="##..." />
+            <marker date="1502725903000" expanded="true" signature="1582:1681" ph="##..." />
+            <marker date="1502725903000" expanded="true" signature="1763:1907" ph="##..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.slim">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="172">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profile/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170814222551_add_is_admin_to_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <marker date="1502647934000" expanded="true" signature="0:421" ph="nav" />
-            <marker date="1502647934000" expanded="true" signature="6:421" ph=".nav-wrapper" />
-            <marker date="1502647934000" expanded="true" signature="23:224" ph="a.brand-logo.center[href=&quot;##!&quot;]" />
-            <marker date="1502647934000" expanded="true" signature="60:224" ph="img[src=&quot;http://cdn.yotepresto.com/v2/assets/yotepresto-blanco-15-4a69602dedb325289ae03aa94ef90a81772af9c41050f6403012e5426fcce2d9.svg&quot; alt=&quot;logo&quot; class=&quot;nav-logo&quot;]" />
-            <marker date="1502647934000" expanded="true" signature="229:421" ph="ul.left.hide-on-med-and-down" />
-            <marker date="1502647934000" expanded="true" signature="264:308" ph="li" />
-            <marker date="1502647934000" expanded="true" signature="275:308" ph="a[href=&quot;##&quot;]" />
-            <marker date="1502647934000" expanded="true" signature="297:308" ph="| Mi Cuenta" />
-            <marker date="1502647934000" expanded="true" signature="315:361" ph="li" />
-            <marker date="1502647934000" expanded="true" signature="326:361" ph="a[href=&quot;##&quot;]" />
-            <marker date="1502647934000" expanded="true" signature="348:361" ph="| Solicitudes" />
-            <marker date="1502647934000" expanded="true" signature="368:421" ph="li.active" />
-            <marker date="1502647934000" expanded="true" signature="386:421" ph="a[href=&quot;##&quot;]" />
-            <marker date="1502647934000" expanded="true" signature="408:421" ph="| JavaScript" />
+            <marker date="1502749610000" expanded="true" signature="23:136" ph=" ... end" />
+            <marker date="1502749610000" expanded="true" signature="67:132" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1502749970000" expanded="true" signature="13:1151" ph=" ... end" />
+            <marker date="1502749970000" expanded="true" signature="63:1147" ph=" ... end" />
+            <marker date="1502749970000" expanded="true" signature="68:134" ph="##..." />
+            <marker date="1502749970000" expanded="true" signature="191:240" ph="if ... end" />
+            <marker date="1502749970000" expanded="true" signature="271:306" ph="do ... end" />
+            <marker date="1502749970000" expanded="true" signature="343:378" ph="do ... end" />
+            <marker date="1502749970000" expanded="true" signature="383:1141" ph="##..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/personal_reference.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1502645389000" expanded="true" signature="23:66" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1502727006000" expanded="true" signature="27:96" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1502749266000" expanded="true" signature="20:103" ph=" ... end" />
+            <marker date="1502749266000" expanded="true" signature="92:98" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/templates/erb/scaffold/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <marker date="1502580774000" expanded="true" signature="118:271" ph="..." />
+            <marker date="1502580774000" expanded="true" signature="142:259" ph="do ... end" />
+            <marker date="1502580774000" expanded="true" signature="301:339" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/profile_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requisitions/edit.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requisitions/_header.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding>
+            <marker date="1502752854000" expanded="true" signature="0:2" ph="hr" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding>
+            <marker date="1502758121000" expanded="true" signature="0:762" ph="//..." />
+            <marker date="1502758121000" expanded="true" signature="793:1143" ph="{...}" />
+            <marker date="1502758121000" expanded="true" signature="826:966" ph="{...}" />
+            <marker date="1502758121000" expanded="true" signature="874:962" ph="//..." />
+            <marker date="1502758121000" expanded="true" signature="1001:1139" ph="{...}" />
+            <marker date="1502758121000" expanded="true" signature="1052:1135" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requisitions/show.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requisitions/new.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170815034346_add_omniauth_to_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="41" />
+          <folding>
+            <marker date="1502768626000" expanded="true" signature="24:157" ph=" ... end" />
+            <marker date="1502768626000" expanded="true" signature="68:153" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170815034634_add_image_to_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding>
+            <marker date="1502768828000" expanded="true" signature="21:114" ph=" ... end" />
+            <marker date="1502768828000" expanded="true" signature="65:110" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/app_keys.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="53" lean-forward="false" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <marker date="1502772134000" expanded="true" signature="30:417" ph="do ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="28" column="2" lean-forward="false" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <marker date="1502774278000" expanded="true" signature="821:847" ph="en: &lt;1 key&gt;" />
+            <marker date="1502774278000" expanded="true" signature="834:847" ph="Hello world" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/es.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="107" column="9" lean-forward="true" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/requisition.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <folding>
+            <marker date="1502774299000" expanded="true" signature="17:586" ph=" ... end" />
+            <marker date="1502774299000" expanded="true" signature="83:109" ph="{ ... }" />
+            <marker date="1502774299000" expanded="true" signature="184:310" ph=" ... end" />
+            <marker date="1502774299000" expanded="true" signature="189:304" ph="##..." />
+            <marker date="1502774299000" expanded="true" signature="313:582" ph="##..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="362">
+          <caret line="23" column="62" lean-forward="true" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
           <folding>
-            <marker date="1502646398000" expanded="true" signature="13:223" ph="html" />
-            <marker date="1502646398000" expanded="true" signature="20:173" ph="head" />
-            <marker date="1502646398000" expanded="true" signature="29:52" ph="title" />
-            <marker date="1502646398000" expanded="true" signature="41:52" ph="| Prestoapp" />
-            <marker date="1502646398000" expanded="true" signature="57:73" ph="= csrf_meta_tags" />
-            <marker date="1502646398000" expanded="true" signature="78:130" ph="= stylesheet_link_tag    'application', media: 'all'" />
-            <marker date="1502646398000" expanded="true" signature="135:173" ph="= javascript_include_tag 'application'" />
-            <marker date="1502646398000" expanded="true" signature="176:223" ph="body" />
-            <marker date="1502646398000" expanded="true" signature="185:210" ph="= render 'layouts/navbar'" />
-            <marker date="1502646398000" expanded="true" signature="215:223" ph="= yield" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="1" column="161" lean-forward="false" selection-start-line="1" selection-start-column="161" selection-end-line="1" selection-end-column="161" />
-          <folding>
-            <marker date="1502647984000" expanded="true" signature="0:171" ph="h1" />
-            <marker date="1502647984000" expanded="true" signature="5:171" ph="img[src=&quot;http://cdn.yotepresto.com/v2/assets/yotepresto-blanco-15-4a69602dedb325289ae03aa94ef90a81772af9c41050f6403012e5426fcce2d9.svg&quot; alt=&quot;logo&quot; class=&quot;main-logo&quot;]" />
+            <marker date="1502760011000" expanded="true" signature="13:595" ph="html" />
+            <marker date="1502760011000" expanded="true" signature="20:173" ph="head" />
+            <marker date="1502760011000" expanded="true" signature="29:52" ph="title" />
+            <marker date="1502760011000" expanded="true" signature="41:52" ph="| Prestoapp" />
+            <marker date="1502760011000" expanded="true" signature="57:73" ph="= csrf_meta_tags" />
+            <marker date="1502760011000" expanded="true" signature="78:130" ph="= stylesheet_link_tag    'application', media: 'all'" />
+            <marker date="1502760011000" expanded="true" signature="135:173" ph="= javascript_include_tag 'application'" />
+            <marker date="1502760011000" expanded="true" signature="176:595" ph="body" />
+            <marker date="1502760011000" expanded="true" signature="185:210" ph="= render 'layouts/navbar'" />
+            <marker date="1502760011000" expanded="true" signature="215:595" ph=".container" />
+            <marker date="1502760011000" expanded="true" signature="383:390" ph="= yield" />
+            <marker date="1502760011000" expanded="true" signature="397:595" ph="- if notice" />
+            <marker date="1502760011000" expanded="true" signature="417:499" ph="javascript:" />
+            <marker date="1502760011000" expanded="true" signature="521:595" ph="javascript:" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="87" lean-forward="false" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
+        <state relative-caret-position="286">
+          <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
           <folding>
-            <marker date="1502648187000" expanded="true" signature="0:708" ph="/*...*/" />
-            <marker date="1502648187000" expanded="true" signature="959:978" ph="{...}" />
-            <marker date="1502648187000" expanded="true" signature="991:1010" ph="{...}" />
-            <marker date="1502648187000" expanded="true" signature="1017:1056" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="0:735" ph="/*...*/" />
+            <marker date="1502776425000" expanded="true" signature="1088:1165" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1172:1268" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1281:1316" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1339:1374" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1387:1442" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1464:1533" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1545:1593" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1611:1632" ph="{...}" />
+            <marker date="1502776425000" expanded="true" signature="1668:1707" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/requisitions/_form.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="146">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding>
+            <marker date="1502760286000" expanded="true" signature="0:1998" ph="= simple_form_for @requisition do |f|" />
+            <marker date="1502760286000" expanded="true" signature="40:226" ph=".row" />
+            <marker date="1502760286000" expanded="true" signature="49:137" ph="= f.input :income, label: 'Ingreso', placeholder: '$', wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="142:226" ph="= f.input :address_years, label: 'Años Dirección', wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="229:614" ph=".row" />
+            <marker date="1502760286000" expanded="true" signature="238:327" ph="= f.input :company_years, label: 'Años En Tu Compañía', wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="474:614" ph="= f.input :marital_status, label: 'Estado Civil', wrapper_html: { class: 'm6 s12' }, collection: ['Soltero', 'Casado'], include_blank: false" />
+            <marker date="1502760286000" expanded="true" signature="617:873" ph=".row" />
+            <marker date="1502760286000" expanded="true" signature="626:733" ph="= f.input :requested_amount, label: 'Monto Solicitado', placeholder: '$', wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="738:873" ph="= f.input :payment_terms, label: '&lt;i class=&quot;material-icons&quot;&gt;check_circle&lt;/i&gt;  Condiciones'.html_safe, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="876:1087" ph=".row" />
+            <marker date="1502760286000" expanded="true" signature="885:1008" ph="= f.input :bank, label: '&lt;i class=&quot;material-icons&quot;&gt;account_balance&lt;/i&gt;  Banco'.html_safe, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="1013:1087" ph="= f.input :comment, label: 'Comentario', wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="1090:1391" ph=".row" />
+            <marker date="1502760286000" expanded="true" signature="1099:1239" ph="= f.input :company_name, label: '&lt;i class=&quot;material-icons&quot;&gt;business&lt;/i&gt;  Nombre de la Compañía'.html_safe, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="1244:1391" ph="= f.input :company_phone_number, label: '&lt;i class=&quot;material-icons&quot;&gt;call_end&lt;/i&gt;  Teléfono de Compañía'.html_safe, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="1394:1638" ph=".row" />
+            <marker date="1502760286000" expanded="true" signature="1403:1548" ph="= f.input :dependents_number, label: '&lt;i class=&quot;material-icons&quot;&gt;phone&lt;/i&gt;  Teléfono de Dependientes'.html_safe, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="1553:1638" ph="= f.input :company_position, label: 'Puesto Actual',wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="1641:1959" ph=".row" />
+            <marker date="1502760286000" expanded="true" signature="1650:1807" ph="= f.input :has_sgmm, label: 'Seguro de Gastos Médicos Mayores', as: :boolean, checked_value: true, unchecked_value: false, wrapper_html: { class: 'm5 s12 ' }" />
+            <marker date="1502760286000" expanded="true" signature="1812:1881" ph="= f.input :has_imss, label: 'IMSS', wrapper_html: { class: 'm3 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="1886:1959" ph="= f.input :has_car, label: 'Automóvil', wrapper_html: { class: 'm4 s12' }" />
+            <marker date="1502760286000" expanded="true" signature="1962:1998" ph=".row" />
+            <marker date="1502760286000" expanded="true" signature="1971:1998" ph="= f.button :submit, 'Listo'" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requisitions/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <marker date="1502777400000" expanded="true" signature="0:17" ph="h1" />
+            <marker date="1502777400000" expanded="true" signature="4:17" ph="| Solicitudes" />
+            <marker date="1502777400000" expanded="true" signature="18:149" ph="= link_to new_requisition_path, class: 'waves-effect waves-light btn-large' do" />
+            <marker date="1502777400000" expanded="true" signature="98:130" ph="i.material-icons.left" />
+            <marker date="1502777400000" expanded="true" signature="123:130" ph="| cloud" />
+            <marker date="1502777400000" expanded="true" signature="132:149" ph="| Nueva Solicitud" />
+            <marker date="1502777400000" expanded="true" signature="150:803" ph="table.highlight" />
+            <marker date="1502777400000" expanded="true" signature="168:292" ph="thead" />
+            <marker date="1502777400000" expanded="true" signature="178:292" ph="tr" />
+            <marker date="1502777400000" expanded="true" signature="187:216" ph="th" />
+            <marker date="1502777400000" expanded="true" signature="198:216" ph="| Monto solicitado" />
+            <marker date="1502777400000" expanded="true" signature="223:241" ph="th" />
+            <marker date="1502777400000" expanded="true" signature="234:241" ph="| Fecha" />
+            <marker date="1502777400000" expanded="true" signature="248:264" ph="th" />
+            <marker date="1502777400000" expanded="true" signature="259:264" ph="| Ver" />
+            <marker date="1502777400000" expanded="true" signature="271:292" ph="th" />
+            <marker date="1502777400000" expanded="true" signature="282:292" ph="| Eliminar" />
+            <marker date="1502777400000" expanded="true" signature="295:803" ph="tbody" />
+            <marker date="1502777400000" expanded="true" signature="305:803" ph="- @requisitions.each do |r|" />
+            <marker date="1502777400000" expanded="true" signature="339:803" ph="tr" />
+            <marker date="1502777400000" expanded="true" signature="350:397" ph="td" />
+            <marker date="1502777400000" expanded="true" signature="363:366" ph="| $" />
+            <marker date="1502777400000" expanded="true" signature="377:397" ph="= r.requested_amount" />
+            <marker date="1502777400000" expanded="true" signature="406:433" ph="td" />
+            <marker date="1502777400000" expanded="true" signature="419:433" ph="= r.created_at" />
+            <marker date="1502777400000" expanded="true" signature="442:614" ph="td" />
+            <marker date="1502777400000" expanded="true" signature="455:614" ph="=link_to requisition_path(r), class: 'waves-effect waves-light btn' do" />
+            <marker date="1502777400000" expanded="true" signature="540:585" ph="i.material-icons.left" />
+            <marker date="1502777400000" expanded="true" signature="578:585" ph="| cloud" />
+            <marker date="1502777400000" expanded="true" signature="600:614" ph="| Ver Detalles" />
+            <marker date="1502777400000" expanded="true" signature="623:803" ph="td" />
+            <marker date="1502777400000" expanded="true" signature="636:803" ph="= link_to requisition_path(r), class: 'waves-effect waves-light btn', method: :delete do" />
+            <marker date="1502777400000" expanded="true" signature="737:780" ph="i.material-icons.left" />
+            <marker date="1502777400000" expanded="true" signature="773:780" ph="| cloud" />
+            <marker date="1502777400000" expanded="true" signature="793:803" ph="| Eliminar" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/requisitions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="51" column="90" lean-forward="false" selection-start-line="51" selection-start-column="90" selection-end-line="51" selection-end-column="90" />
           <folding />
         </state>
       </provider>

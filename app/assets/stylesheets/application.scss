@@ -12,23 +12,60 @@
  *
  *= require_tree .
  *= require_self
+ *= require material_icons
  */
 
 @import "materialize/components/color";
 // Colors
 $primary-color: color("blue-grey", "darken-4") !default;
-$secondary-color: color("yellow", "base") !default;
-$body-background-color: color("blue-grey", "darken-1");
+$body-background-color: color("blue-grey", "darken-3") !default;
+$main-text-color: white;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
 @import 'materialize';
 
 .nav-logo {
-  height: 30px;
-}
-
-.main-logo {
-  height: 50px;
+  height: 25px;
+  filter: grayscale(100%);
+  transition: all .1s ease-in;
 }
 
 body {
-  background-color: $primary-color;
+  background-color: $body-background-color;
+  color: $main-text-color;
+  text-align: center;
+}
+
+.no-filter {
+  filter: none;
+  height: 27px;
+}
+
+.main-logo-container {
+  display: flex;
+  width: 100%;
+}
+
+.main-logo {
+  height: 40px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+nav .material-icons {
+  display: inline-block !important;
+  font-size: 100% !important;
+}
+
+.nav-name {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.facebook-image {
+  line-height: 5;
+}
+
+table.highlight tbody tr:hover td {
+  color: $primary-color !important;
 }

@@ -15,8 +15,7 @@ class CreateRequisitions < ActiveRecord::Migration[5.1]
       t.string :company_position
       t.boolean :has_sgmm
       t.boolean :has_imss
-      t.string :has_car
-      t.string :boolean
+      t.boolean :has_car
       t.references :user, foreign_key: true
 
       t.timestamps

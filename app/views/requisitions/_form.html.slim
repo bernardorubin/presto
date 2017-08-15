@@ -1,0 +1,26 @@
+= simple_form_for @requisition do |f|
+  .row
+    = f.input :income, label: 'Ingreso', placeholder: '$', wrapper_html: { class: 'm6 s12' }
+    = f.input :address_years, label: 'Años Dirección', wrapper_html: { class: 'm6 s12' }
+  .row
+    = f.input :company_years, label: 'Años En Tu Compañía', wrapper_html: { class: 'm6 s12' }
+    /= f.input :marital_status, label: 'Estado Civil', include_blank: 'Soltero', wrapper_html: { class: 'm6 s12' }, :collection => ['Casado']
+    = f.input :marital_status, label: 'Estado Civil', wrapper_html: { class: 'm6 s12' }, collection: ['Soltero', 'Casado'], include_blank: false
+  .row
+    = f.input :requested_amount, label: 'Monto Solicitado', placeholder: '$', wrapper_html: { class: 'm6 s12' }
+    = f.input :payment_terms, label: '<i class="material-icons">check_circle</i>  Condiciones'.html_safe, wrapper_html: { class: 'm6 s12' }
+  .row
+    = f.input :bank, label: '<i class="material-icons">account_balance</i>  Banco'.html_safe, wrapper_html: { class: 'm6 s12' }
+    = f.input :comment, label: 'Comentario', wrapper_html: { class: 'm6 s12' }
+  .row
+    = f.input :company_name, label: '<i class="material-icons">business</i>  Nombre de la Compañía'.html_safe, wrapper_html: { class: 'm6 s12' }
+    = f.input :company_phone_number, label: '<i class="material-icons">call_end</i>  Teléfono de Compañía'.html_safe, wrapper_html: { class: 'm6 s12' }
+  .row
+    = f.input :dependents_number, label: '<i class="material-icons">phone</i>  Teléfono de Dependientes'.html_safe, wrapper_html: { class: 'm6 s12' }
+    = f.input :company_position, label: 'Puesto Actual',wrapper_html: { class: 'm6 s12' }
+  .row
+    = f.input :has_sgmm, label: 'Seguro de Gastos Médicos Mayores', as: :boolean, checked_value: true, unchecked_value: false, wrapper_html: { class: 'm5 s12 ' }
+    = f.input :has_imss, label: 'IMSS', wrapper_html: { class: 'm3 s12' }
+    = f.input :has_car, label: 'Automóvil', wrapper_html: { class: 'm4 s12' }
+  .row
+    = f.button :submit, 'Listo'
