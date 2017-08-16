@@ -6,7 +6,7 @@ class CreatePersonalReferences < ActiveRecord::Migration[5.1]
       t.string :first_last_name
       t.string :second_last_name
       t.string :cell_phone_number
-      t.references :user, foreign_key: true
+      t.references :requisition, foreign_key: true
 
       t.timestamps
     end

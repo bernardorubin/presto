@@ -1,8 +1,8 @@
 h1
   | Solicitud
-= link_to edit_requisition_path(@requisition), class: 'waves-effect waves-light btn-large' do
+= link_to edit_requisition_path(@requisition), class: 'waves-effect waves-light btn-large orange' do
   i.material-icons.left
-    | cloud
+    | edit
   | Editar
 
 table.highlight
@@ -19,4 +19,40 @@ table.highlight
         = attr_name
       td
         = attr_value
+h4
+  | Referencias Personales
+- @requisition.personal_references.each do |r|
+  table.highlight
+    thead
+      tr
+        th
+          | Name
+        th
+          | Value
+    tbody
+      tr
+        td
+         | Primer Nombre
+        td
+          = r.first_name
+      tr
+        td
+         | Segundo Nombre
+        td
+          = r.second_name
+      tr
+        td
+         | Apellido Paterno
+        td
+          = r.first_last_name
+      tr
+        td
+         | Apellido Materno
+        td
+          = r.second_last_name
+      tr
+        td
+         | Teléfono
+        td
+          = r.cell_phone_number
 

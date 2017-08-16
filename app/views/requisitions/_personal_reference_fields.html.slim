@@ -1,0 +1,12 @@
+.nested-fields
+  .row
+    = f.input :first_name, wrapper_html: { class: 'm6 s12' }
+    = f.input :second_name, wrapper_html: { class: 'm6 s12' }
+  .row
+    = f.input :first_last_name, wrapper_html: { class: 'm6 s12' }
+    = f.input :second_last_name, wrapper_html: { class: 'm6 s12' }
+  .row
+    = f.input :cell_phone_number, wrapper_html: { class: 'm12 s12' }
+  .row
+    = link_to_remove_association f, class: 'waves-effect waves-light red btn' do
+      | Eliminar Referencia

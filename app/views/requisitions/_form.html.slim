@@ -19,8 +19,17 @@
     = f.input :dependents_number, label: '<i class="material-icons">phone</i>  Teléfono de Dependientes'.html_safe, wrapper_html: { class: 'm6 s12' }
     = f.input :company_position, label: 'Puesto Actual',wrapper_html: { class: 'm6 s12' }
   .row
-    = f.input :has_sgmm, label: 'Seguro de Gastos Médicos Mayores', as: :boolean, checked_value: true, unchecked_value: false, wrapper_html: { class: 'm5 s12 ' }
+    = f.input :has_sgmm, label: 'Seguro de Gastos Médicos Mayores', wrapper_html: { class: 'm5 s12 ' }
     = f.input :has_imss, label: 'IMSS', wrapper_html: { class: 'm3 s12' }
     = f.input :has_car, label: 'Automóvil', wrapper_html: { class: 'm4 s12' }
   .row
-    = f.button :submit, 'Listo'
+    = f.simple_fields_for :personal_references do |r|
+      = render 'personal_reference_fields', f: r
+  .row
+    = link_to_add_association f, :personal_references, class: 'waves-effect waves-light btn' do
+      | Agregar Refencia Personal
+  hr
+  .row
+    = button_tag(type: 'submit', class: "waves-effect waves-light btn-large") do
+      i.material-icons
+        | check

@@ -1,3 +1,3 @@
 class PersonalReference < ApplicationRecord
-  belongs_to :user
+  belongs_to :requisition
 end

@@ -10,7 +10,7 @@ class Ability
       can :manage, :all
     end
 
-    can :manage, Requisition do |r|
+    can [:read, :create, :update], Requisition do |r|
       r.user == user
     end
 

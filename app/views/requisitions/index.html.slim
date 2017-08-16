@@ -2,8 +2,9 @@ h1
  | Solicitudes
 = link_to new_requisition_path, class: 'waves-effect waves-light btn-large' do
  i.material-icons.left
-   | cloud
+   | add_circle
  | Nueva Solicitud
+hr
 table.highlight
   thead
     tr
@@ -26,7 +27,7 @@ table.highlight
         td
           =link_to requisition_path(r), class: 'waves-effect waves-light btn' do
               i.material-icons.left
-                | cloud
+                | playlist_add_check
               | Ver Detalles
         td
           = link_to requisition_path(r), class: 'waves-effect waves-light btn', method: :delete do

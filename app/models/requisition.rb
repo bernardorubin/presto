@@ -1,8 +1,11 @@
 class Requisition < ApplicationRecord
   belongs_to :user
+  has_many :personal_references
   scope :latest_first, -> {order(created_at: :desc)}
   validates :income, presence: true
   validate :no_monkey
+
+  accepts_nested_attributes_for :personal_references, reject_if: :all_blank, allow_destroy: true
 
   def no_monkey
     # if title.present? && title.downcase.include?('monkey')

@@ -1,6 +1,25 @@
 h1
   | Editar Mi Usuario
+hr
+|  <img src="
+=@user.image
+| " alt="" style="height:50px">
 = simple_form_for @user, url: "/profile" do |f|
-  = f.input :first_name
-  = f.input :first_last_name
-  = f.button :submit, "Guardar Cambios"
+  .row
+    = f.input :first_name, label: 'Nombre', wrapper_html: { class: 'm6 s12' }
+    = f.input :second_name, label: 'Segundo Nombre', wrapper_html: { class: 'm6 s12' }
+  .row
+    = f.input :first_last_name, label: 'Apellido Paterno', wrapper_html: { class: 'm6 s12' }
+    = f.input :second_last_name, label: 'Apellido Materno', wrapper_html: { class: 'm6 s12' }
+  .row
+    = f.input :birth_date, label: 'Fecha de Nacimiento', wrapper_html: { class: 'm6 s12' }
+    = f.input :curp, label: 'CURP', wrapper_html: { class: 'm6 s12' }
+  .row
+    = f.input :rfc, label: 'RFC', wrapper_html: { class: 'm6 s12' }
+    = f.input :gender, label: 'Sexo', wrapper_html: { class: 'm6 s12' }, collection: ['Masculino', 'Femenino'], include_blank: false
+  .row
+    = f.input :birth_state, label: 'Estado donde Nací', wrapper_html: { class: 'm6 s12' }
+    = f.input :phone_number, label: 'Teléfono', wrapper_html: { class: 'm6 s12' }
+  .row
+    = f.input :email, wrapper_html: { class: 'm6 s12' }
+    = f.button :submit, 'Guardar Cambios', wrapper_html: { class: 'm6 s12' }

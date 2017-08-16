@@ -2,31 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6912381b-dd30-416d-884f-d6da0fdbd5e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/requisitions/_form.html.slim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/requisitions/_header.html.slim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/requisitions/edit.html.slim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/requisitions/new.html.slim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/requisitions/show.html.slim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/app_keys.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/locales/es.yml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20170813172922_create_requisitions.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/requisitions/_personal_reference_fields.html.slim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/profile_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/profile_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/requisitions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/requisitions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ability.rb" afterPath="$PROJECT_DIR$/app/models/ability.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/personal_reference.rb" afterPath="$PROJECT_DIR$/app/models/personal_reference.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/requisition.rb" afterPath="$PROJECT_DIR$/app/models/requisition.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.slim" afterPath="$PROJECT_DIR$/app/views/home/index.html.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_navbar.html.slim" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profile/index.html.slim" afterPath="$PROJECT_DIR$/app/views/profile/index.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requisitions/_form.html.slim" afterPath="$PROJECT_DIR$/app/views/requisitions/_form.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requisitions/edit.html.slim" afterPath="$PROJECT_DIR$/app/views/requisitions/edit.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requisitions/index.html.slim" afterPath="$PROJECT_DIR$/app/views/requisitions/index.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requisitions/show.html.slim" afterPath="$PROJECT_DIR$/app/views/requisitions/show.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -52,12 +45,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="requisitions_controller.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/requisitions_controller.rb">
+      <file leaf-file-name="index.html.slim" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/profile/index.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="51" column="90" lean-forward="false" selection-start-line="51" selection-start-column="90" selection-end-line="51" selection-end-column="90" />
-              <folding />
+            <state relative-caret-position="38">
+              <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+              <folding>
+                <marker date="1502858499000" expanded="true" signature="5:25" ph="| Editar Mi Usuario" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,36 +61,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>devise</find>
-      <find>cocoon</find>
-      <find>last_name</find>
-      <find>config.i18n.default_locale</find>
-      <find>signou</find>
-      <find>latest_first</find>
-      <find>submit</find>
-      <find>telephone</find>
-      <find>bordered</find>
-      <find>soltero</find>
-      <find>cita creada</find>
-      <find>nueva solicitud</find>
-      <find>editar</find>
-      <find>self.find</find>
-      <find>self</find>
-      <find>app_secret</find>
-      <find>if @user</find>
-      <find>new_with</find>
-      <find>validates</find>
-      <find>:es</find>
-      <find>no_mo</find>
-      <find>alidates</find>
-      <find>blanco</find>
-      <find>nueva so</find>
-      <find>tr</find>
-      <find>waves</find>
-      <find>monto sol</find>
-      <find>#{</find>
-      <find>current_user.image</find>
       <find>no autorizado</find>
+      <find>label</find>
+      <find>listo</find>
+      <find>waves</find>
+      <find>estado civil</find>
+      <find>sexo</find>
+      <find>validates</find>
+      <find>OmniAuth::Builder do</find>
+      <find>provider :facebook</find>
+      <find>scope</find>
+      <find>sign in with fa</find>
+      <find>6 characters minimum</find>
+      <find>entrar con fac</find>
+      <find>nueva solicitud</find>
+      <find>ver detalles</find>
+      <find>remove_reward</find>
+      <find>3.times</find>
+      <find>remove_ass</find>
+      <find>agregar</find>
+      <find>has_sgmm</find>
+      <find>updated</find>
+      <find>solicitud</find>
+      <find>value</find>
+      <find>.permit</find>
+      <find>no autori</find>
+      <find>cannot</find>
+      <find>editar</find>
+      <find>editar solic</find>
+      <find>permit</find>
+      <find>editar mi</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/config/initializers</dir>
@@ -108,39 +103,43 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.slim" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/profile_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/app/views/profile/index.html.slim" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170814222551_add_is_admin_to_users.rb" />
-        <option value="$PROJECT_DIR$/app/models/ability.rb" />
         <option value="$PROJECT_DIR$/app/views/requisitions/_header.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/requisitions/edit.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/requisitions/new.html.slim" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/requisitions/_form.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/requisitions/show.html.slim" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/migrate/20170815034634_add_image_to_users.rb" />
-        <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/initializers/app_keys.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/requisition.rb" />
         <option value="$PROJECT_DIR$/config/locales/es.yml" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_navbar.html.slim" />
+        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/ability.rb" />
         <option value="$PROJECT_DIR$/app/views/requisitions/index.html.slim" />
+        <option value="$PROJECT_DIR$/app/models/personal_reference.rb" />
+        <option value="$PROJECT_DIR$/app/models/requisition.rb" />
+        <option value="$PROJECT_DIR$/app/views/requisitions/_personal_references_fields.html.slim" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+        <option value="$PROJECT_DIR$/app/views/requisitions/_personal_reference_fields.html.slim" />
         <option value="$PROJECT_DIR$/app/controllers/requisitions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/requisitions/show.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/requisitions/edit.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/requisitions/_form.html.slim" />
+        <option value="$PROJECT_DIR$/app/controllers/profile_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/profile/index.html.slim" />
       </list>
     </option>
   </component>
@@ -157,7 +156,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="726" />
@@ -181,6 +180,7 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,27 +197,7 @@
               <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
@@ -236,7 +216,7 @@
               <item name="prestoapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="prestoapp" type="b2602c69:ProjectViewProjectNode" />
@@ -250,15 +230,14 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v6.9.1/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="navbar&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/views/layouts/_navbar.html.slim&#10;routes&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/routes.rb&#10;gitigno&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/.gitignore&#10;user.rb&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/models/user.rb&#10;gem&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/Gemfile&#10;app&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/views/layouts/application.html.slim&#10;application.js&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/assets/javascripts/application.js&#10;applic&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/application.rb&#10;application.rb&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/controllers/application_controller.rb&#10;rou&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/routes.rb&#10;developme&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/environments/development.rb&#10;route&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/routes.rb&#10;gemfile&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/Gemfile" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="SearchEverywhereHistoryKey" value="ab&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/models/ability.rb&#10;ability&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/models/ability.rb&#10;app_&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/initializers/app_keys.rb&#10;navbar&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/views/layouts/_navbar.html.slim&#10;gemf&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/Gemfile&#10;routes&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/routes.rb&#10;gitigno&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/.gitignore&#10;user.rb&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/models/user.rb&#10;gem&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/Gemfile&#10;app&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/views/layouts/application.html.slim&#10;application.js&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/assets/javascripts/application.js&#10;applic&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/application.rb&#10;application.rb&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/app/controllers/application_controller.rb&#10;rou&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/routes.rb&#10;developme&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/environments/development.rb&#10;route&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/config/routes.rb&#10;gemfile&#9;FILE&#9;file:///Users/bern/Desktop/prestoapp/Gemfile" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -390,17 +369,19 @@
       <updated>1502575764263</updated>
       <workItem from="1502575766954" duration="10566000" />
       <workItem from="1502669267197" duration="6845000" />
-      <workItem from="1502748129603" duration="18633000" />
+      <workItem from="1502748129603" duration="18731000" />
+      <workItem from="1502817244999" duration="13006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36044000" />
+    <option name="totallyTimeSpent" value="49148000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="726" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25767368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -408,7 +389,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28475937" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -431,33 +412,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-          <folding>
-            <marker date="1502776425000" expanded="true" signature="0:735" ph="/*...*/" />
-            <marker date="1502776425000" expanded="true" signature="1088:1165" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1172:1268" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1281:1316" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1339:1374" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1387:1442" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1464:1533" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1545:1593" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1611:1632" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1668:1707" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170812233302_create_users.rb" />
     <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -499,14 +453,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170813172922_create_requisitions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170813172922_create_requisitions.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20170813172949_create_personal_references.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -516,13 +463,6 @@
             <marker date="1502645389000" expanded="true" signature="74:351" ph=" ... end" />
             <marker date="1502645389000" expanded="true" signature="113:345" ph="do ... end" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/mailer.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -565,14 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profile/index.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170814222551_add_is_admin_to_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -580,32 +512,6 @@
           <folding>
             <marker date="1502749610000" expanded="true" signature="23:136" ph=" ... end" />
             <marker date="1502749610000" expanded="true" signature="67:132" ph=" ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1502749970000" expanded="true" signature="13:1151" ph=" ... end" />
-            <marker date="1502749970000" expanded="true" signature="63:1147" ph=" ... end" />
-            <marker date="1502749970000" expanded="true" signature="68:134" ph="##..." />
-            <marker date="1502749970000" expanded="true" signature="191:240" ph="if ... end" />
-            <marker date="1502749970000" expanded="true" signature="271:306" ph="do ... end" />
-            <marker date="1502749970000" expanded="true" signature="343:378" ph="do ... end" />
-            <marker date="1502749970000" expanded="true" signature="383:1141" ph="##..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/personal_reference.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1502645389000" expanded="true" signature="23:66" ph=" ... end" />
           </folding>
         </state>
       </provider>
@@ -643,37 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <marker date="1502580774000" expanded="true" signature="118:271" ph="..." />
-            <marker date="1502580774000" expanded="true" signature="142:259" ph="do ... end" />
-            <marker date="1502580774000" expanded="true" signature="301:339" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/profile_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/requisitions/edit.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/requisitions/_header.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding>
-            <marker date="1502752854000" expanded="true" signature="0:2" ph="hr" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,22 +564,6 @@
             <marker date="1502758121000" expanded="true" signature="1001:1139" ph="{...}" />
             <marker date="1502758121000" expanded="true" signature="1052:1135" ph="//..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/requisitions/show.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,26 +597,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/app_keys.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="53" lean-forward="false" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -772,14 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -788,22 +623,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="28" column="2" lean-forward="false" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-18">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <marker date="1502774278000" expanded="true" signature="821:847" ph="en: &lt;1 key&gt;" />
-            <marker date="1502774278000" expanded="true" signature="834:847" ph="Hello world" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,23 +638,218 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/mailer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <marker date="1502817634000" expanded="true" signature="21:226" ph="..." />
+            <marker date="1502817634000" expanded="true" signature="30:182" ph="..." />
+            <marker date="1502817634000" expanded="true" signature="116:172" ph="..." />
+            <marker date="1502817634000" expanded="true" signature="191:218" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/development.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="8943" column="450" lean-forward="false" selection-start-line="8943" selection-start-column="450" selection-end-line="8943" selection-end-column="450" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/app_keys.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="53" lean-forward="false" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="3" column="161" lean-forward="false" selection-start-line="3" selection-start-column="161" selection-end-line="3" selection-end-column="161" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+          <folding>
+            <marker date="1502841084000" expanded="true" signature="10:1622" ph=" ... end" />
+            <marker date="1502841084000" expanded="true" signature="33:148" ph="##..." />
+            <marker date="1502841084000" expanded="true" signature="437:512" ph=" ... end" />
+            <marker date="1502841084000" expanded="true" signature="544:1351" ph=" ... end" />
+            <marker date="1502841084000" expanded="true" signature="549:587" ph="##..." />
+            <marker date="1502841084000" expanded="true" signature="654:1345" ph="do ... end" />
+            <marker date="1502841084000" expanded="true" signature="699:827" ph="if ... end" />
+            <marker date="1502841084000" expanded="true" signature="1164:1337" ph="##..." />
+            <marker date="1502841084000" expanded="true" signature="1398:1618" ph=" ... end" />
+            <marker date="1502841084000" expanded="true" signature="1415:1610" ph="do ... end" />
+            <marker date="1502841084000" expanded="true" signature="1433:1600" ph="if ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/shared/_links.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <marker date="1502841219000" expanded="true" signature="4:113" ph="if ... end" />
+            <marker date="1502841219000" expanded="true" signature="123:277" ph="if ... end" />
+            <marker date="1502841219000" expanded="true" signature="287:481" ph="if ... end" />
+            <marker date="1502841219000" expanded="true" signature="491:674" ph="if ... end" />
+            <marker date="1502841219000" expanded="true" signature="684:897" ph="if ... end" />
+            <marker date="1502841219000" expanded="true" signature="907:1149" ph="if ... end" />
+            <marker date="1502841219000" expanded="true" signature="987:1138" ph="do ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/personal_reference.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding>
+            <marker date="1502850392000" expanded="true" signature="23:73" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/requisition.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        <state relative-caret-position="38">
+          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
           <folding>
-            <marker date="1502774299000" expanded="true" signature="17:586" ph=" ... end" />
-            <marker date="1502774299000" expanded="true" signature="83:109" ph="{ ... }" />
-            <marker date="1502774299000" expanded="true" signature="184:310" ph=" ... end" />
-            <marker date="1502774299000" expanded="true" signature="189:304" ph="##..." />
-            <marker date="1502774299000" expanded="true" signature="313:582" ph="##..." />
+            <marker date="1502850524000" expanded="true" signature="17:716" ph=" ... end" />
+            <marker date="1502850524000" expanded="true" signature="115:141" ph="{ ... }" />
+            <marker date="1502850524000" expanded="true" signature="314:440" ph=" ... end" />
+            <marker date="1502850524000" expanded="true" signature="319:434" ph="##..." />
+            <marker date="1502850524000" expanded="true" signature="443:712" ph="##..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+          <folding>
+            <marker date="1502852719000" expanded="true" signature="0:735" ph="/*...*/" />
+            <marker date="1502852719000" expanded="true" signature="1088:1165" ph="{...}" />
+            <marker date="1502852719000" expanded="true" signature="1172:1268" ph="{...}" />
+            <marker date="1502852719000" expanded="true" signature="1281:1316" ph="{...}" />
+            <marker date="1502852719000" expanded="true" signature="1339:1374" ph="{...}" />
+            <marker date="1502852719000" expanded="true" signature="1387:1442" ph="{...}" />
+            <marker date="1502852719000" expanded="true" signature="1464:1533" ph="{...}" />
+            <marker date="1502852719000" expanded="true" signature="1545:1593" ph="{...}" />
+            <marker date="1502852719000" expanded="true" signature="1611:1632" ph="{...}" />
+            <marker date="1502852719000" expanded="true" signature="1668:1707" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requisitions/_header.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding>
+            <marker date="1502752854000" expanded="true" signature="0:2" ph="hr" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requisitions/_personal_reference_fields.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding>
+            <marker date="1502854372000" expanded="true" signature="0:476" ph=".nested-fields" />
+            <marker date="1502854372000" expanded="true" signature="17:144" ph=".row" />
+            <marker date="1502854372000" expanded="true" signature="26:82" ph="= f.input :first_name, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502854372000" expanded="true" signature="87:144" ph="= f.input :second_name, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502854372000" expanded="true" signature="147:284" ph=".row" />
+            <marker date="1502854372000" expanded="true" signature="156:217" ph="= f.input :first_last_name, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502854372000" expanded="true" signature="222:284" ph="= f.input :second_last_name, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502854372000" expanded="true" signature="287:360" ph=".row" />
+            <marker date="1502854372000" expanded="true" signature="296:360" ph="= f.input :cell_phone_number, wrapper_html: { class: 'm12 s12' }" />
+            <marker date="1502854372000" expanded="true" signature="363:476" ph=".row" />
+            <marker date="1502854372000" expanded="true" signature="372:476" ph="= link_to_remove_association f, class: 'waves-effect waves-light red btn' do" />
+            <marker date="1502854372000" expanded="true" signature="455:476" ph="| Eliminar Referencia" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <marker date="1502818224000" expanded="true" signature="0:1194" ph="nav" />
+            <marker date="1502818224000" expanded="true" signature="6:1194" ph=".nav-wrapper" />
+            <marker date="1502818224000" expanded="true" signature="23:224" ph="a.brand-logo.center[href=&quot;##!&quot;]" />
+            <marker date="1502818224000" expanded="true" signature="60:224" ph="img[src=&quot;http://cdn.yotepresto.com/v2/assets/yotepresto-blanco-15-4a69602dedb325289ae03aa94ef90a81772af9c41050f6403012e5426fcce2d9.svg&quot; alt=&quot;logo&quot; class=&quot;nav-logo&quot;]" />
+            <marker date="1502818224000" expanded="true" signature="229:538" ph="ul.left.hide-on-med-and-down" />
+            <marker date="1502818224000" expanded="true" signature="264:389" ph="li.active" />
+            <marker date="1502818224000" expanded="true" signature="282:389" ph="= link_to root_path do" />
+            <marker date="1502818224000" expanded="true" signature="315:350" ph="i.material-icons" />
+            <marker date="1502818224000" expanded="true" signature="344:350" ph="| home" />
+            <marker date="1502818224000" expanded="true" signature="361:389" ph=".nav-name" />
+            <marker date="1502818224000" expanded="true" signature="383:389" ph="| Home" />
+            <marker date="1502818224000" expanded="true" signature="396:538" ph="li" />
+            <marker date="1502818224000" expanded="true" signature="407:538" ph="= link_to requisitions_path do" />
+            <marker date="1502818224000" expanded="true" signature="448:492" ph="i.material-icons" />
+            <marker date="1502818224000" expanded="true" signature="477:492" ph="| content_paste" />
+            <marker date="1502818224000" expanded="true" signature="503:538" ph=".nav-name" />
+            <marker date="1502818224000" expanded="true" signature="525:538" ph="| Solicitudes" />
+            <marker date="1502818224000" expanded="true" signature="543:1194" ph="ul.right.hide-on-med-and-down" />
+            <marker date="1502818224000" expanded="true" signature="579:1194" ph="- if user_signed_in?" />
+            <marker date="1502818224000" expanded="true" signature="608:748" ph="li" />
+            <marker date="1502818224000" expanded="true" signature="621:748" ph="a.facebook-image[href=&quot;&quot;]" />
+            <marker date="1502818224000" expanded="true" signature="659:671" ph="| &lt;img src=&quot;" />
+            <marker date="1502818224000" expanded="true" signature="684:704" ph="= current_user.image" />
+            <marker date="1502818224000" expanded="true" signature="717:748" ph="| &quot; alt=&quot;&quot; style=&quot;height:25px&quot;&gt;" />
+            <marker date="1502818224000" expanded="true" signature="757:947" ph="li" />
+            <marker date="1502818224000" expanded="true" signature="770:947" ph="= link_to profile_path do" />
+            <marker date="1502818224000" expanded="true" signature="808:852" ph="i.material-icons" />
+            <marker date="1502818224000" expanded="true" signature="839:852" ph="| fingerprint" />
+            <marker date="1502818224000" expanded="true" signature="865:947" ph=".nav-name" />
+            <marker date="1502818224000" expanded="true" signature="889:916" ph="= current_user.display_name" />
+            <marker date="1502818224000" expanded="true" signature="931:947" ph="|  Ver Mi Cuenta" />
+            <marker date="1502818224000" expanded="true" signature="956:1046" ph="li" />
+            <marker date="1502818224000" expanded="true" signature="969:1046" ph="= link_to &quot;Cerrar Sesión&quot;, destroy_user_session_path, method: 'DELETE'" />
+            <marker date="1502818224000" expanded="true" signature="1061:1117" ph="li" />
+            <marker date="1502818224000" expanded="true" signature="1074:1117" ph="= link_to &quot;Ingresar&quot;, new_user_session_path" />
+            <marker date="1502818224000" expanded="true" signature="1126:1193" ph="li" />
+            <marker date="1502818224000" expanded="true" signature="1139:1193" ph="= link_to &quot;Inscribirse&quot;, new_user_registration_path" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
+        <state relative-caret-position="420">
           <caret line="23" column="62" lean-forward="true" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
           <folding>
             <marker date="1502760011000" expanded="true" signature="13:595" ph="html" />
@@ -852,116 +870,221 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
-          <folding>
-            <marker date="1502776425000" expanded="true" signature="0:735" ph="/*...*/" />
-            <marker date="1502776425000" expanded="true" signature="1088:1165" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1172:1268" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1281:1316" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1339:1374" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1387:1442" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1464:1533" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1545:1593" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1611:1632" ph="{...}" />
-            <marker date="1502776425000" expanded="true" signature="1668:1707" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/requisitions/_form.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <marker date="1502760286000" expanded="true" signature="0:1998" ph="= simple_form_for @requisition do |f|" />
-            <marker date="1502760286000" expanded="true" signature="40:226" ph=".row" />
-            <marker date="1502760286000" expanded="true" signature="49:137" ph="= f.input :income, label: 'Ingreso', placeholder: '$', wrapper_html: { class: 'm6 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="142:226" ph="= f.input :address_years, label: 'Años Dirección', wrapper_html: { class: 'm6 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="229:614" ph=".row" />
-            <marker date="1502760286000" expanded="true" signature="238:327" ph="= f.input :company_years, label: 'Años En Tu Compañía', wrapper_html: { class: 'm6 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="474:614" ph="= f.input :marital_status, label: 'Estado Civil', wrapper_html: { class: 'm6 s12' }, collection: ['Soltero', 'Casado'], include_blank: false" />
-            <marker date="1502760286000" expanded="true" signature="617:873" ph=".row" />
-            <marker date="1502760286000" expanded="true" signature="626:733" ph="= f.input :requested_amount, label: 'Monto Solicitado', placeholder: '$', wrapper_html: { class: 'm6 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="738:873" ph="= f.input :payment_terms, label: '&lt;i class=&quot;material-icons&quot;&gt;check_circle&lt;/i&gt;  Condiciones'.html_safe, wrapper_html: { class: 'm6 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="876:1087" ph=".row" />
-            <marker date="1502760286000" expanded="true" signature="885:1008" ph="= f.input :bank, label: '&lt;i class=&quot;material-icons&quot;&gt;account_balance&lt;/i&gt;  Banco'.html_safe, wrapper_html: { class: 'm6 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="1013:1087" ph="= f.input :comment, label: 'Comentario', wrapper_html: { class: 'm6 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="1090:1391" ph=".row" />
-            <marker date="1502760286000" expanded="true" signature="1099:1239" ph="= f.input :company_name, label: '&lt;i class=&quot;material-icons&quot;&gt;business&lt;/i&gt;  Nombre de la Compañía'.html_safe, wrapper_html: { class: 'm6 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="1244:1391" ph="= f.input :company_phone_number, label: '&lt;i class=&quot;material-icons&quot;&gt;call_end&lt;/i&gt;  Teléfono de Compañía'.html_safe, wrapper_html: { class: 'm6 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="1394:1638" ph=".row" />
-            <marker date="1502760286000" expanded="true" signature="1403:1548" ph="= f.input :dependents_number, label: '&lt;i class=&quot;material-icons&quot;&gt;phone&lt;/i&gt;  Teléfono de Dependientes'.html_safe, wrapper_html: { class: 'm6 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="1553:1638" ph="= f.input :company_position, label: 'Puesto Actual',wrapper_html: { class: 'm6 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="1641:1959" ph=".row" />
-            <marker date="1502760286000" expanded="true" signature="1650:1807" ph="= f.input :has_sgmm, label: 'Seguro de Gastos Médicos Mayores', as: :boolean, checked_value: true, unchecked_value: false, wrapper_html: { class: 'm5 s12 ' }" />
-            <marker date="1502760286000" expanded="true" signature="1812:1881" ph="= f.input :has_imss, label: 'IMSS', wrapper_html: { class: 'm3 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="1886:1959" ph="= f.input :has_car, label: 'Automóvil', wrapper_html: { class: 'm4 s12' }" />
-            <marker date="1502760286000" expanded="true" signature="1962:1998" ph=".row" />
-            <marker date="1502760286000" expanded="true" signature="1971:1998" ph="= f.button :submit, 'Listo'" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/requisitions/index.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        <state relative-caret-position="344">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
           <folding>
-            <marker date="1502777400000" expanded="true" signature="0:17" ph="h1" />
-            <marker date="1502777400000" expanded="true" signature="4:17" ph="| Solicitudes" />
-            <marker date="1502777400000" expanded="true" signature="18:149" ph="= link_to new_requisition_path, class: 'waves-effect waves-light btn-large' do" />
-            <marker date="1502777400000" expanded="true" signature="98:130" ph="i.material-icons.left" />
-            <marker date="1502777400000" expanded="true" signature="123:130" ph="| cloud" />
-            <marker date="1502777400000" expanded="true" signature="132:149" ph="| Nueva Solicitud" />
-            <marker date="1502777400000" expanded="true" signature="150:803" ph="table.highlight" />
-            <marker date="1502777400000" expanded="true" signature="168:292" ph="thead" />
-            <marker date="1502777400000" expanded="true" signature="178:292" ph="tr" />
-            <marker date="1502777400000" expanded="true" signature="187:216" ph="th" />
-            <marker date="1502777400000" expanded="true" signature="198:216" ph="| Monto solicitado" />
-            <marker date="1502777400000" expanded="true" signature="223:241" ph="th" />
-            <marker date="1502777400000" expanded="true" signature="234:241" ph="| Fecha" />
-            <marker date="1502777400000" expanded="true" signature="248:264" ph="th" />
-            <marker date="1502777400000" expanded="true" signature="259:264" ph="| Ver" />
-            <marker date="1502777400000" expanded="true" signature="271:292" ph="th" />
-            <marker date="1502777400000" expanded="true" signature="282:292" ph="| Eliminar" />
-            <marker date="1502777400000" expanded="true" signature="295:803" ph="tbody" />
-            <marker date="1502777400000" expanded="true" signature="305:803" ph="- @requisitions.each do |r|" />
-            <marker date="1502777400000" expanded="true" signature="339:803" ph="tr" />
-            <marker date="1502777400000" expanded="true" signature="350:397" ph="td" />
-            <marker date="1502777400000" expanded="true" signature="363:366" ph="| $" />
-            <marker date="1502777400000" expanded="true" signature="377:397" ph="= r.requested_amount" />
-            <marker date="1502777400000" expanded="true" signature="406:433" ph="td" />
-            <marker date="1502777400000" expanded="true" signature="419:433" ph="= r.created_at" />
-            <marker date="1502777400000" expanded="true" signature="442:614" ph="td" />
-            <marker date="1502777400000" expanded="true" signature="455:614" ph="=link_to requisition_path(r), class: 'waves-effect waves-light btn' do" />
-            <marker date="1502777400000" expanded="true" signature="540:585" ph="i.material-icons.left" />
-            <marker date="1502777400000" expanded="true" signature="578:585" ph="| cloud" />
-            <marker date="1502777400000" expanded="true" signature="600:614" ph="| Ver Detalles" />
-            <marker date="1502777400000" expanded="true" signature="623:803" ph="td" />
-            <marker date="1502777400000" expanded="true" signature="636:803" ph="= link_to requisition_path(r), class: 'waves-effect waves-light btn', method: :delete do" />
-            <marker date="1502777400000" expanded="true" signature="737:780" ph="i.material-icons.left" />
-            <marker date="1502777400000" expanded="true" signature="773:780" ph="| cloud" />
-            <marker date="1502777400000" expanded="true" signature="793:803" ph="| Eliminar" />
+            <marker date="1502841783000" expanded="true" signature="0:17" ph="h1" />
+            <marker date="1502841783000" expanded="true" signature="4:17" ph="| Solicitudes" />
+            <marker date="1502841783000" expanded="true" signature="18:154" ph="= link_to new_requisition_path, class: 'waves-effect waves-light btn-large' do" />
+            <marker date="1502841783000" expanded="true" signature="98:135" ph="i.material-icons.left" />
+            <marker date="1502841783000" expanded="true" signature="123:135" ph="| add_circle" />
+            <marker date="1502841783000" expanded="true" signature="137:154" ph="| Nueva Solicitud" />
+            <marker date="1502841783000" expanded="true" signature="155:157" ph="hr" />
+            <marker date="1502841783000" expanded="true" signature="158:824" ph="table.highlight" />
+            <marker date="1502841783000" expanded="true" signature="176:300" ph="thead" />
+            <marker date="1502841783000" expanded="true" signature="186:300" ph="tr" />
+            <marker date="1502841783000" expanded="true" signature="195:224" ph="th" />
+            <marker date="1502841783000" expanded="true" signature="206:224" ph="| Monto solicitado" />
+            <marker date="1502841783000" expanded="true" signature="231:249" ph="th" />
+            <marker date="1502841783000" expanded="true" signature="242:249" ph="| Fecha" />
+            <marker date="1502841783000" expanded="true" signature="256:272" ph="th" />
+            <marker date="1502841783000" expanded="true" signature="267:272" ph="| Ver" />
+            <marker date="1502841783000" expanded="true" signature="279:300" ph="th" />
+            <marker date="1502841783000" expanded="true" signature="290:300" ph="| Eliminar" />
+            <marker date="1502841783000" expanded="true" signature="303:824" ph="tbody" />
+            <marker date="1502841783000" expanded="true" signature="313:824" ph="- @requisitions.each do |r|" />
+            <marker date="1502841783000" expanded="true" signature="347:824" ph="tr" />
+            <marker date="1502841783000" expanded="true" signature="358:405" ph="td" />
+            <marker date="1502841783000" expanded="true" signature="371:374" ph="| $" />
+            <marker date="1502841783000" expanded="true" signature="385:405" ph="= r.requested_amount" />
+            <marker date="1502841783000" expanded="true" signature="414:441" ph="td" />
+            <marker date="1502841783000" expanded="true" signature="427:441" ph="= r.created_at" />
+            <marker date="1502841783000" expanded="true" signature="450:635" ph="td" />
+            <marker date="1502841783000" expanded="true" signature="463:635" ph="=link_to requisition_path(r), class: 'waves-effect waves-light btn' do" />
+            <marker date="1502841783000" expanded="true" signature="548:606" ph="i.material-icons.left" />
+            <marker date="1502841783000" expanded="true" signature="586:606" ph="| playlist_add_check" />
+            <marker date="1502841783000" expanded="true" signature="621:635" ph="| Ver Detalles" />
+            <marker date="1502841783000" expanded="true" signature="644:824" ph="td" />
+            <marker date="1502841783000" expanded="true" signature="657:824" ph="= link_to requisition_path(r), class: 'waves-effect waves-light btn', method: :delete do" />
+            <marker date="1502841783000" expanded="true" signature="758:801" ph="i.material-icons.left" />
+            <marker date="1502841783000" expanded="true" signature="794:801" ph="| cloud" />
+            <marker date="1502841783000" expanded="true" signature="814:824" ph="| Eliminar" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/requisitions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="51" column="90" lean-forward="false" selection-start-line="51" selection-start-column="90" selection-end-line="51" selection-end-column="90" />
+        <state relative-caret-position="393">
+          <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+          <folding>
+            <marker date="1502858249000" expanded="true" signature="28:2338" ph=" ... end" />
+            <marker date="1502858249000" expanded="true" signature="235:360" ph=" ... end" />
+            <marker date="1502858249000" expanded="true" signature="314:354" ph="{ ... }" />
+            <marker date="1502858249000" expanded="true" signature="374:770" ph=" ... end" />
+            <marker date="1502858249000" expanded="true" signature="477:764" ph="if ... end" />
+            <marker date="1502858249000" expanded="true" signature="698:738" ph="{ ... }" />
+            <marker date="1502858249000" expanded="true" signature="782:814" ph=" ... end" />
+            <marker date="1502858249000" expanded="true" signature="827:930" ph=" ... end" />
+            <marker date="1502858249000" expanded="true" signature="942:948" ph=" ... end" />
+            <marker date="1502858249000" expanded="true" signature="962:1132" ph=" ... end" />
+            <marker date="1502858249000" expanded="true" signature="967:1126" ph="if ... end" />
+            <marker date="1502858249000" expanded="true" signature="1147:1243" ph=" ... end" />
+            <marker date="1502858249000" expanded="true" signature="1271:1511" ph=" ... end" />
+            <marker date="1502858249000" expanded="true" signature="1276:1505" ph="if ... end" />
+            <marker date="1502858249000" expanded="true" signature="1537:2083" ph=" ... end" />
+            <marker date="1502858249000" expanded="true" signature="2107:2334" ph=" ... end" />
+            <marker date="1502858249000" expanded="true" signature="2162:2327" ph="begin ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requisitions/show.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding>
+            <marker date="1502858332000" expanded="true" signature="0:16" ph="h1" />
+            <marker date="1502858332000" expanded="true" signature="5:16" ph="| Solicitud" />
+            <marker date="1502858332000" expanded="true" signature="17:164" ph="= link_to edit_requisition_path(@requisition), class: 'waves-effect waves-light btn-large orange' do" />
+            <marker date="1502858332000" expanded="true" signature="120:152" ph="i.material-icons.left" />
+            <marker date="1502858332000" expanded="true" signature="146:152" ph="| edit" />
+            <marker date="1502858332000" expanded="true" signature="155:164" ph="| Editar" />
+            <marker date="1502858332000" expanded="true" signature="165:381" ph="table.highlight" />
+            <marker date="1502858332000" expanded="true" signature="183:244" ph="thead" />
+            <marker date="1502858332000" expanded="true" signature="193:244" ph="tr" />
+            <marker date="1502858332000" expanded="true" signature="202:219" ph="th" />
+            <marker date="1502858332000" expanded="true" signature="213:219" ph="| Name" />
+            <marker date="1502858332000" expanded="true" signature="226:244" ph="th" />
+            <marker date="1502858332000" expanded="true" signature="237:244" ph="| Value" />
+            <marker date="1502858332000" expanded="true" signature="247:381" ph="tbody" />
+            <marker date="1502858332000" expanded="true" signature="257:381" ph="- @requisition.attributes.each do |attr_name, attr_value|" />
+            <marker date="1502858332000" expanded="true" signature="320:381" ph="tr" />
+            <marker date="1502858332000" expanded="true" signature="329:351" ph="td" />
+            <marker date="1502858332000" expanded="true" signature="340:351" ph="= attr_name" />
+            <marker date="1502858332000" expanded="true" signature="358:381" ph="td" />
+            <marker date="1502858332000" expanded="true" signature="369:381" ph="= attr_value" />
+            <marker date="1502858332000" expanded="true" signature="382:411" ph="h4" />
+            <marker date="1502858332000" expanded="true" signature="387:411" ph="| Referencias Personales" />
+            <marker date="1502858332000" expanded="true" signature="412:990" ph="- @requisition.personal_references.each do |r|" />
+            <marker date="1502858332000" expanded="true" signature="461:989" ph="table.highlight" />
+            <marker date="1502858332000" expanded="true" signature="481:552" ph="thead" />
+            <marker date="1502858332000" expanded="true" signature="493:552" ph="tr" />
+            <marker date="1502858332000" expanded="true" signature="504:523" ph="th" />
+            <marker date="1502858332000" expanded="true" signature="517:523" ph="| Name" />
+            <marker date="1502858332000" expanded="true" signature="532:552" ph="th" />
+            <marker date="1502858332000" expanded="true" signature="545:552" ph="| Value" />
+            <marker date="1502858332000" expanded="true" signature="557:989" ph="tbody" />
+            <marker date="1502858332000" expanded="true" signature="569:643" ph="tr" />
+            <marker date="1502858332000" expanded="true" signature="580:607" ph="td" />
+            <marker date="1502858332000" expanded="true" signature="592:607" ph="| Primer Nombre" />
+            <marker date="1502858332000" expanded="true" signature="616:643" ph="td" />
+            <marker date="1502858332000" expanded="true" signature="629:643" ph="= r.first_name" />
+            <marker date="1502858332000" expanded="true" signature="650:726" ph="tr" />
+            <marker date="1502858332000" expanded="true" signature="661:689" ph="td" />
+            <marker date="1502858332000" expanded="true" signature="673:689" ph="| Segundo Nombre" />
+            <marker date="1502858332000" expanded="true" signature="698:726" ph="td" />
+            <marker date="1502858332000" expanded="true" signature="711:726" ph="= r.second_name" />
+            <marker date="1502858332000" expanded="true" signature="733:815" ph="tr" />
+            <marker date="1502858332000" expanded="true" signature="744:774" ph="td" />
+            <marker date="1502858332000" expanded="true" signature="756:774" ph="| Apellido Paterno" />
+            <marker date="1502858332000" expanded="true" signature="783:815" ph="td" />
+            <marker date="1502858332000" expanded="true" signature="796:815" ph="= r.first_last_name" />
+            <marker date="1502858332000" expanded="true" signature="822:905" ph="tr" />
+            <marker date="1502858332000" expanded="true" signature="833:863" ph="td" />
+            <marker date="1502858332000" expanded="true" signature="845:863" ph="| Apellido Materno" />
+            <marker date="1502858332000" expanded="true" signature="872:905" ph="td" />
+            <marker date="1502858332000" expanded="true" signature="885:905" ph="= r.second_last_name" />
+            <marker date="1502858332000" expanded="true" signature="912:989" ph="tr" />
+            <marker date="1502858332000" expanded="true" signature="923:945" ph="td" />
+            <marker date="1502858332000" expanded="true" signature="935:945" ph="| Teléfono" />
+            <marker date="1502858332000" expanded="true" signature="954:989" ph="td" />
+            <marker date="1502858332000" expanded="true" signature="967:989" ph="= r.cell_phone_number" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requisitions/edit.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requisitions/_form.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+          <folding>
+            <marker date="1502858364000" expanded="true" signature="0:2279" ph="= simple_form_for @requisition do |f|" />
+            <marker date="1502858364000" expanded="true" signature="40:226" ph=".row" />
+            <marker date="1502858364000" expanded="true" signature="49:137" ph="= f.input :income, label: 'Ingreso', placeholder: '$', wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="142:226" ph="= f.input :address_years, label: 'Años Dirección', wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="229:614" ph=".row" />
+            <marker date="1502858364000" expanded="true" signature="238:327" ph="= f.input :company_years, label: 'Años En Tu Compañía', wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="474:614" ph="= f.input :marital_status, label: 'Estado Civil', wrapper_html: { class: 'm6 s12' }, collection: ['Soltero', 'Casado'], include_blank: false" />
+            <marker date="1502858364000" expanded="true" signature="617:873" ph=".row" />
+            <marker date="1502858364000" expanded="true" signature="626:733" ph="= f.input :requested_amount, label: 'Monto Solicitado', placeholder: '$', wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="738:873" ph="= f.input :payment_terms, label: '&lt;i class=&quot;material-icons&quot;&gt;check_circle&lt;/i&gt;  Condiciones'.html_safe, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="876:1087" ph=".row" />
+            <marker date="1502858364000" expanded="true" signature="885:1008" ph="= f.input :bank, label: '&lt;i class=&quot;material-icons&quot;&gt;account_balance&lt;/i&gt;  Banco'.html_safe, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="1013:1087" ph="= f.input :comment, label: 'Comentario', wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="1090:1391" ph=".row" />
+            <marker date="1502858364000" expanded="true" signature="1099:1239" ph="= f.input :company_name, label: '&lt;i class=&quot;material-icons&quot;&gt;business&lt;/i&gt;  Nombre de la Compañía'.html_safe, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="1244:1391" ph="= f.input :company_phone_number, label: '&lt;i class=&quot;material-icons&quot;&gt;call_end&lt;/i&gt;  Teléfono de Compañía'.html_safe, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="1394:1638" ph=".row" />
+            <marker date="1502858364000" expanded="true" signature="1403:1548" ph="= f.input :dependents_number, label: '&lt;i class=&quot;material-icons&quot;&gt;phone&lt;/i&gt;  Teléfono de Dependientes'.html_safe, wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="1553:1638" ph="= f.input :company_position, label: 'Puesto Actual',wrapper_html: { class: 'm6 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="1641:1900" ph=".row" />
+            <marker date="1502858364000" expanded="true" signature="1650:1748" ph="= f.input :has_sgmm, label: 'Seguro de Gastos Médicos Mayores', wrapper_html: { class: 'm5 s12 ' }" />
+            <marker date="1502858364000" expanded="true" signature="1753:1822" ph="= f.input :has_imss, label: 'IMSS', wrapper_html: { class: 'm3 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="1827:1900" ph="= f.input :has_car, label: 'Automóvil', wrapper_html: { class: 'm4 s12' }" />
+            <marker date="1502858364000" expanded="true" signature="1903:2010" ph=".row" />
+            <marker date="1502858364000" expanded="true" signature="1912:2010" ph="= f.simple_fields_for :personal_references do |r|" />
+            <marker date="1502858364000" expanded="true" signature="1968:2010" ph="= render 'personal_reference_fields', f: r" />
+            <marker date="1502858364000" expanded="true" signature="2013:2147" ph=".row" />
+            <marker date="1502858364000" expanded="true" signature="2022:2147" ph="= link_to_add_association f, :personal_references, class: 'waves-effect waves-light btn' do" />
+            <marker date="1502858364000" expanded="true" signature="2120:2147" ph="| Agregar Refencia Personal" />
+            <marker date="1502858364000" expanded="true" signature="2150:2152" ph="hr" />
+            <marker date="1502858364000" expanded="true" signature="2155:2279" ph=".row" />
+            <marker date="1502858364000" expanded="true" signature="2164:2279" ph="= button_tag(type: 'submit', class: &quot;waves-effect waves-light btn-large&quot;) do" />
+            <marker date="1502858364000" expanded="true" signature="2247:2279" ph="i.material-icons" />
+            <marker date="1502858364000" expanded="true" signature="2272:2279" ph="| check" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/profile_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1502858474000" expanded="true" signature="23:445" ph=" ... end" />
+            <marker date="1502858474000" expanded="true" signature="96:127" ph=" ... end" />
+            <marker date="1502858474000" expanded="true" signature="141:210" ph=" ... end" />
+            <marker date="1502858474000" expanded="true" signature="240:441" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profile/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding>
+            <marker date="1502858499000" expanded="true" signature="5:25" ph="| Editar Mi Usuario" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -7,11 +7,15 @@ class User < ApplicationRecord
   has_many :requisitions
   has_many :personal_references
 
+  validates :email, uniqueness: true
+
   def display_name
     first_name.present? ? "#{first_name} #{first_last_name}" : email
   end
 
   def self.from_omniauth(auth)
+    # puts auth.info
+    # puts auth.extra
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       # TODO FIX EMAIL STUFF
       if auth.info.email?
@@ -20,8 +24,10 @@ class User < ApplicationRecord
         user.email = "#{rand(1..30000)}@gmail.com"
       end
       user.password = Devise.friendly_token[0,20]
-      user.first_name = auth.info.name   # assuming the user model has a name
+      user.first_name = auth.info.first_name # assuming the user model has a name
+      user.first_last_name = auth.info.last_name # assuming the user model has a name
       user.image = auth.info.image # assuming the user model has an image
+      user.gender = auth.extra.gender
       # If you are using confirmable and the provider(s) you use validate emails,
       # uncomment the line below to skip the confirmation emails.
       # user.skip_confirmation!

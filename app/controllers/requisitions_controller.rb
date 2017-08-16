@@ -6,6 +6,7 @@ class RequisitionsController < ApplicationController
   def new
     @requisition = Requisition.new
     @locations = ['yes', 'no']
+    3.times {@requisition.personal_references.build}
   end
 
   def create
@@ -16,6 +17,7 @@ class RequisitionsController < ApplicationController
       redirect_to requisition_path (@requisition)
     else
       flash.now[:alert] = 'Favor de arreglar los problemas abajo'
+      3.times {@requisition.personal_references.build}
       render :new
     end
   end
@@ -48,16 +50,16 @@ class RequisitionsController < ApplicationController
   private
 
   def authorize
-    if cannot?(:manage, @requisition)
-      redirect_to requsitions_path, alert: 'No Autorizado a editar cosas de otros usuarios'
+    if cannot?(:read, @requisition) || cannot?(:create, @requisition) || cannot?(:update, @requisition)
+      redirect_to requisitions_path, alert: 'No Autorizado a editar cosas de otros usuarios o a eliminar tus solicitudes'
     end
   end
 
   def requisition_params
-    params.require(:requisition).permit([:income, :address_years, :company_years, :marital_status,
+    params.require(:requisition).permit(:income, :address_years, :company_years, :marital_status,
                                         :requested_amount, :payment_terms, :bank, :comment, :company_name,
                                         :company_phone_number, :dependents_number, :company_position,
-                                        :has_sgmm, :has_car, :user_id])
+                                        :has_sgmm, :has_imss, :has_car, :user_id, personal_references_attributes: [:first_name, :second_name, :first_last_name, :second_last_name, :cell_phone_number, :id, :requisition_id, :_destroy])
   end
 
   def find_requisition
