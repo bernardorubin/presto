@@ -1,2 +1,12 @@
 .main-logo-container
   img.main-logo[src="http://cdn.yotepresto.com/v2/assets/yotepresto-blanco-15-4a69602dedb325289ae03aa94ef90a81772af9c41050f6403012e5426fcce2d9.svg" alt="logo"]
+.main-menu-container
+  = link_to requisitions_path, class: 'waves-effect waves-light btn-large' do
+    i.material-icons.left
+      | content_paste
+    | Solicitudes
+.main-menu-container
+  = link_to profile_path, class: 'waves-effect waves-light btn-large' do
+    i.material-icons.left
+      | fingerprint
+    | Ver Mi Cuenta

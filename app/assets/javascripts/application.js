@@ -29,5 +29,27 @@ $(document).ready(function() {
     // $(".main_logo").css("color", "white");
     // $(".main_logo").addClass("leave");
   });
+
 });
 
+
+// $(function() {
+//   // limits the number of categories
+//   $('#personal_references').on('cocoon:after-insert', function() {
+//     check_to_hide_or_show_add_link();
+//   });
+//
+//   $('#personal_references').on('cocoon:after-remove', function() {
+//     check_to_hide_or_show_add_link();
+//   });
+//
+//   check_to_hide_or_show_add_link();
+//
+//   function check_to_hide_or_show_add_link() {
+//     if ($('#personal_references .nested-fields').length == 5) {
+//       $('#add-category a').hide();
+//     } else {
+//       $('#add-category a').show();
+//     }
+//   }
+// });

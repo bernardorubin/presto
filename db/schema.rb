@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20170816022632) do
     t.integer "address_years"
     t.integer "company_years"
     t.string "marital_status"
-    t.integer "requested_amount"
+    t.bigint "requested_amount"
     t.string "payment_terms"
     t.string "bank"
     t.text "comment"

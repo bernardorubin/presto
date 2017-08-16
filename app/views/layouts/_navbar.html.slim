@@ -28,7 +28,6 @@ nav
               | fingerprint
             .nav-name
               = current_user.display_name
-              |  Ver Mi Cuenta
         li
           = link_to "Cerrar Sesión", destroy_user_session_path, method: 'DELETE'
       - else

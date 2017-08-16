@@ -1,12 +1,13 @@
 class RequisitionsController < ApplicationController
   before_action :authenticate_user!
   before_action :find_requisition, only: [:show, :edit, :destroy, :update]
-  before_action :authorize, only: [:edit, :destroy, :update]
+  before_action :authorize, only: [:edit]
 
   def new
     @requisition = Requisition.new
     @locations = ['yes', 'no']
-    3.times {@requisition.personal_references.build}
+    # 3.times {@requisition.personal_references.build}
+    @requisition.personal_references.build
   end
 
   def create
@@ -17,7 +18,7 @@ class RequisitionsController < ApplicationController
       redirect_to requisition_path (@requisition)
     else
       flash.now[:alert] = 'Favor de arreglar los problemas abajo'
-      3.times {@requisition.personal_references.build}
+      @requisition.personal_references.build
       render :new
     end
   end
@@ -35,23 +36,31 @@ class RequisitionsController < ApplicationController
   end
 
   def update
-    if @requisition.update requisition_params
-      redirect_to requisition_path(@requisition), notice: 'Solicitud actualizada'
+    if cannot?(:update, @requisition)
+      redirect_to requisitions_path, alert: 'No Autorizado a editar solicitudes que no son tuyas'
     else
-      render :edit
+      if @requisition.update requisition_params
+        redirect_to requisition_path(@requisition), notice: 'Solicitud actualizada'
+      else
+        render :edit
+      end
     end
   end
 
   def destroy
-    @requisition.destroy
-    redirect_to requisitions_path, notice: 'Solicitud eliminada'
+    if cannot?(:destroy, @requisition)
+      redirect_to requisitions_path, alert: 'No Autorizado a eliminar tus solicitudes'
+    else
+      @requisition.destroy
+      redirect_to requisitions_path, notice: 'Solicitud eliminada'
+    end
   end
 
   private
 
   def authorize
-    if cannot?(:read, @requisition) || cannot?(:create, @requisition) || cannot?(:update, @requisition)
-      redirect_to requisitions_path, alert: 'No Autorizado a editar cosas de otros usuarios o a eliminar tus solicitudes'
+    if cannot?(:read, @requisition)
+      redirect_to requisitions_path, alert: 'No Autorizado a leer solicitudes que no son tuyas'
     end
   end
 

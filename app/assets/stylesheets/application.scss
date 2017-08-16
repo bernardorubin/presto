@@ -47,7 +47,7 @@ body {
 }
 
 .main-logo {
-  height: 40px;
+  height: 200px;
   margin: auto;
   margin-top: 20px;
 }
@@ -68,4 +68,8 @@ nav .material-icons {
 
 table.highlight tbody tr:hover td {
   color: $primary-color !important;
+}
+
+.main-menu-container {
+  margin: 40px;
 }
